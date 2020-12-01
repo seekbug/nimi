@@ -1,0 +1,52 @@
+.index {
+  width: 100%;
+  height: 100%;
+}
+.index .index_cates {
+  width: 100%;
+  display: flex;
+  height: cals(100vh - 90rpx);
+}
+.index .index_cates .left_menu {
+  flex: 2;
+  height: 100%;
+}
+.index .index_cates .left_menu .menu_item {
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  text-align: center;
+}
+.index .index_cates .left_menu .active {
+  color: #ED1C24;
+  border-left: 5rpx #ED1C24 solid;
+}
+.index .index_cates .right_content {
+  flex: 5;
+  height: 100%;
+}
+.index .index_cates .right_content .goods_group {
+  font-size: 30rpx;
+  text-align: center;
+  width: 100%;
+}
+.index .index_cates .right_content .goods_group .goods_title {
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+.index .index_cates .right_content .goods_group .goods_title text {
+  padding: 0 10rpx;
+}
+.index .index_cates .right_content .goods_group .goods_list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.index .index_cates .right_content .goods_group .goods_list navigator {
+  width: 33.33%;
+  text-align: center;
+}
+.index .index_cates .right_content .goods_group .goods_list navigator image {
+  width: 50%;
+}

@@ -1,0 +1,30 @@
+// 商品列表
+.tabs_first{
+    width: 100%;
+    navigator{
+    border-bottom: 1px solid #ccc;
+
+        display: flex;
+        align-items: center;
+        .left_img{
+            flex: 2;
+            image{
+                width: 70%;
+            }
+        }
+        .right_content{
+            flex: 3;
+            font-size: 30rpx;
+            .title{
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;   //行数
+            }
+            .price{
+            color:#ED1C24;
+            margin-top:22rpx;
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+<view class="detail_swiper">
+	<swiper>
+		<swiper-item wx:for="{{objLsit.pics}}" wx:key="pics_id">
+			<image src="{{item.pics_mid}}" mode="widthFix" />
+		</swiper-item>
+	</swiper>
+</view>

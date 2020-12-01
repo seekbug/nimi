@@ -1,0 +1,6 @@
+<!-- 搜索 -->
+<view class="pyq_search">
+	<navigator url="/pages/search/search" type-open="navigator">
+		搜素  
+	</navigator>
+</view>

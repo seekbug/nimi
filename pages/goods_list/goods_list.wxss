@@ -1,0 +1,28 @@
+.tabs_first {
+  width: 100%;
+}
+.tabs_first navigator {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+}
+.tabs_first navigator .left_img {
+  flex: 2;
+}
+.tabs_first navigator .left_img image {
+  width: 70%;
+}
+.tabs_first navigator .right_content {
+  flex: 3;
+  font-size: 30rpx;
+}
+.tabs_first navigator .right_content .title {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.tabs_first navigator .right_content .price {
+  color: #ED1C24;
+  margin-top: 22rpx;
+}

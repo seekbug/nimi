@@ -1,0 +1,37 @@
+<view class="index">
+	<!-- 搜索 -->
+	<SearchInput></SearchInput>
+	<!-- 搜索end -->
+	<!-- 轮播图 -->
+	<swiper indicator-dots="true" circular="true" autoplay="true" interval="2000">
+		<swiper-item wx:for="{{swiperlist}}" wx:key="goods_id">
+			<navigator url="/pages/search/search">
+				<image mode="widthFix" src="{{item.image_src}}" />
+			</navigator>
+		</swiper-item>
+	</swiper>
+	<!-- 轮播图end -->
+	<!-- 导航分类 -->
+	<view class="index_cate">
+		<navigator wx:for="{{catelist}}" wx:key="name">
+			<image src="{{item.image_src}}" mode="widthFix" />
+		</navigator>
+	</view>
+	<!-- 导航分类end -->
+	<!-- 楼层数据 -->
+	<view class="index_floor">
+		<view class="floor_group" wx:for="{{floorlist}}" wx:for-item="item1" wx:for-index="index1" wx:key="floor_title">
+			<view class="floor_title">
+				<image src="{{item1.floor_title.image_src}}" mode="widthFix" />
+			</view>
+			<view class="product_list">
+				<navigator wx:for="{{item1.product_list}}" wx:for-item="item2" wx:for-index="index2" wx:key="name">
+					<image mode="{{index2==0?'widthFix':'scaleToFill'}}" src="{{item2.image_src}}"></image>
+				</navigator>
+			</view>
+		</view>
+	</view>
+	<!-- 楼层数据end -->
+
+
+</view>

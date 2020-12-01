@@ -1,0 +1,13 @@
+.tabs .tabs_title {
+  display: flex;
+}
+.tabs .tabs_title .active {
+  color: #ED1C24;
+  border-bottom: 5rpx #ED1C24 solid;
+}
+.tabs .tabs_title .title {
+  align-items: center;
+  flex: 1;
+  text-align: center;
+  padding: 15rpx 0;
+}

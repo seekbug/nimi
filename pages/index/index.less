@@ -1,0 +1,57 @@
+.index{
+    width: 100%;
+    height: 100%;
+    //轮播图
+    swiper{
+        width: 100%;
+        image{
+            width: 100%;
+        }
+    }
+    //分类导航
+    .index_cate{
+        width: 100%;
+        display: flex;
+        navigator{
+          flex: 1;
+          padding: 20rpx;
+          image{
+              width: 100%;
+          }
+        }
+    }
+    //楼层数据
+    .index_floor{
+        width: 100%;
+        .floor_group{
+            padding: 10rpx;
+            .floor_title{
+                iamge{
+                    width: 100%;
+                }
+            }
+            .product_list{
+                //清除浮动
+                overflow: hidden;
+                navigator{
+                    float: left;
+                    width: 33.33%;
+                    //后四个超链接
+                    &:nth-last-child(-n+4){
+                    // 后四张图片的高      232 / 386 = 33.33vw / height
+                        height: 386 * 33.33vw / 232 / 2;
+                        border-left: 10rpx solid #ffffff;
+                    }
+                    //2 3 超链接
+                    &:nth-child(2),&:nth-child(3){
+                        border-bottom: 10rpx solid #ffffff;
+                    }
+                    image{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
